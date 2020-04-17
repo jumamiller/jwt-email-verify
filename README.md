@@ -3,19 +3,19 @@
 <div>
     Instead of using the default email verification of laravel,the set of codes in this application<br/>
     let you have control over your application by importing classes.
+   
+    install the jwt auth using the composer i.e composer require tymon/jwt-auth:dev-develop --prefer-source
+    (require Tymon\JWTAuth\Providers\LaravelServiceProvider::class,) into the config/app.php in the providers array.
     
-    <ol>
-    <li>install the jwt auth using the composer i.e composer require tymon/jwt-auth:dev-develop --prefer-source
-    (require Tymon\JWTAuth\Providers\LaravelServiceProvider::class,) into the config/app.php in the providers array.</li>
-    <li>
     require the aliases in the same directory file i.e config/app.php 
     remember these are facades
     'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class, 
     'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
-    </li>
-    <li>Finally generate an auth secret:from your terminal cd /projectDirectory type :php artisan jwt:secret
-    <br/>The key will be set in the .env file</li>
     
-    <p>Set your database and create your application</p>
+    
+    Finally generate an auth secret:from your terminal cd /projectDirectory type :php artisan jwt:secret
+    <br/>The key will be set in the .env file
+    
+    Set your database and create your application
     
     Goodluck!!!!!!!!!!!!
